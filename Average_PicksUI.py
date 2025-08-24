@@ -17,6 +17,9 @@ if uploaded_file is not None:
     # Sort results from lowest to highest average pick
     avg_picks = avg_picks.sort_values(by="Average Pick", ascending=True)
 
+    # Reset index so numbers are in order
+    avg_picks = avg_picks.reset_index(drop=True)
+
     #Show results in table
     st.subheader("Results")
     st.dataframe(avg_picks)
