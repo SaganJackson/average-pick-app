@@ -30,7 +30,7 @@ if uploaded_file is not None:
             avg_picks.index = avg_picks.index + 1
 
             #Show results in table
-            st.subheader("Results")
+            st.subheader("📑 Results")
             st.dataframe(avg_picks)
 
             #Convert dataframe to Excel for download
