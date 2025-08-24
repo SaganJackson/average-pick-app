@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
-st.title("🎯 J-Moe's Average Pick Calculator")
+st.title("🎯 J-Moe's Average Draft Pick Calculator")
 
 uploaded_file = st.file_uploader("Upload your Excel file", type=["xlsx"])
 
