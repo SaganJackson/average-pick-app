@@ -13,7 +13,7 @@ if uploaded_file is not None:
 
      # Check if required columns exist
         if "Player" not in df.columns or "Pick" not in df.columns:
-            st.error("The Excel file must have columns named 'Player' and 'Pick'.")
+            st.error("⚠️ The Excel file must have columns named 'Player' and 'Pick'.")
 
         else:
             # Calculate average picks
