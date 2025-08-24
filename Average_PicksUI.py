@@ -20,6 +20,9 @@ if uploaded_file is not None:
     # Reset index so numbers are in order
     avg_picks = avg_picks.reset_index(drop=True)
 
+    # Make the index start at 1
+    avg_picks.index = avg_picks.index + 1
+
     #Show results in table
     st.subheader("Results")
     st.dataframe(avg_picks)
